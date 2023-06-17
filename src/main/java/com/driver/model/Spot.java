@@ -12,7 +12,7 @@ public class Spot {
     private int id;
 
     private SpotType spotType;
-    private int pricePerPerson;
+    private int pricePerHour;
     private Boolean occupied;
 
     @ManyToOne
@@ -38,12 +38,12 @@ public class Spot {
         this.spotType = spotType;
     }
 
-    public int getPricePerPerson() {
-        return pricePerPerson;
+    public int getPricePerHour() {
+        return pricePerHour;
     }
 
-    public void setPricePerPerson(int pricePerPerson) {
-        this.pricePerPerson = pricePerPerson;
+    public void setPricePerHour(int pricePerHour) {
+        this.pricePerHour = pricePerHour;
     }
 
     public Boolean getOccupied() {
